@@ -47,7 +47,7 @@
 - 到场三样：护照原件+预约确认（邮箱可）+**GOV.UK Checklist 打印件（到现场才签字）**；提前 15 分钟，别更早。
 - 非英文材料官方要求认证翻译（声明句+日期+签章+联系方式+资质页）；译名/证号/地址必须与申请表逐字一致。同一份证件若两人各持一本（如结婚证），译件的 Holder 要对应各自那本，别一份译件改名传两个账户。
 - 自雇补强三件套：营业执照+已签章在职证明+近期经营证据（销项发票合成单 PDF 最好使）。
-- 护照押在签证中心至出签，期间不能出境。★2026 实测：录指纹→出签 **5 个工作日**（官方口径 3 周是上限，别按 3 周排行程）。
+- **护照录指纹当天就还**（eVisa 时代 VAC 不留护照，VFS 当晚发「passport was collected」自动邮件）。★实测：录指纹→出签 **5 个工作日**（官方口径 3 周是上限，别按 3 周排行程）。
 
 ## 6. 邮箱监控
 所有通知走申请时填的那个邮箱。`scripts/visa-mail-check.py N` 列近 N 天签证相关邮件；`scripts/visa-mail-watch.py` 是哨兵（UID 去重+系统弹窗+心跳日志），配 cron 一天三跑，出签后撤。凭据一律走环境变量，不写进脚本。
@@ -55,6 +55,6 @@
 
 ## 7. 出签后
 - 出签邮件＝noreply@fcdos.gov.uk「Your Visa Application: GWF…」，正文原句 "YOUR APPLICATION … HAS BEEN SUCCESSFUL … granted entry clearance to the UK as VISIT from X until Y"。**没有附件**，这封不是旅行凭证，存档进可复用材料库并挂到期日。
-- 2026-02-25 起访问签只发 **eVisa**，护照上不贴签证页。出签后三步：①去 VAC 取护照（工作日营业时段，带身份证+预约确认）或官网约付费快递；②本人手机装「UK Immigration: ID Check」扫护照芯片+刷脸建 **UKVI 账户**（gov.uk/evisa/set-up-ukvi-account，免费，≠申请时的 gov.uk 登录账号；VFS 现场推销的「查签证账户」就是这个，别买）；③登进 view-evisa 核对姓名/护照号/类型 VISIT/有效期，错了走 gov.uk/evisa/report-error-evisa 报错。
+- 2026-02-25 起访问签只发 **eVisa**，护照上不贴签证页。出签后两步：①本人手机装「UK Immigration: ID Check」扫护照芯片+刷脸建 **UKVI 账户**（gov.uk/evisa/set-up-ukvi-account，免费，≠申请时的 gov.uk 登录账号；VFS 现场推销的「查签证账户」就是这个，别买）；②登进 view-evisa 核对姓名/护照号/类型 VISIT/有效期，错了走 gov.uk/evisa/report-error-evisa 报错。
 - **护照换新后必须在 UKVI 账户 update travel document**（gov.uk/evisa/update-ukvi-account），eVisa 绑护照号，否则航司查不到状态拒登机。证件总账里给这条挂到期规则。
 - 这轮配方的真值：主申请人选零拒签的一方、有拒签史的如实申报并说明当时情境、自雇三件套、认证翻译逐字对齐，**结果拿满 10 年**。下次英联邦系（澳/新/加）照这套抄。
