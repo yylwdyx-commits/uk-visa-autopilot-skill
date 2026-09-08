@@ -15,7 +15,8 @@ Visa applications are 90% clerical work and 10% judgement. The clerical part (60
 | File | What it does |
 |---|---|
 | `SKILL.md` | The workflow: hard rules, cheapest-path search (do you even need this visa?), document audit, rule lookup, deliverables, travel-history from official exit-entry records, six known traps |
-| `references/uk-gov-vfs-automation.md` | Browser automation recipe for gov.uk and VFS Global: resume links, the one-shot handshake, free biometrics slots, the 10 file inputs, the five upload traps, what to do after the decision (eVisa, UKVI account) |
+| `references/uk-gov-vfs-automation.md` | Browser automation recipe for gov.uk and VFS Global: resume links, the one-shot handshake, free biometrics slots, the 10 file inputs, the five upload traps, the passport is handed back on biometrics day (no collection step under eVisa) |
+| `references/ukvi-account-evisa.md` | **After the grant.** Screen-by-screen answers for creating the UKVI account and linking the eVisa on the applicant's own phone, plus the three traps that stall people in mainland China (SMS code never arrives: skip it; ID Check app "problem with the service": switch network; one phone is enough, no QR) and which of the three emails actually means "done" |
 | `references/review-gate.md` | **The pre-submission review gate.** 21 agents in four roles (visa officer, immigration lawyer, consistency auditor, English editor), each blocker re-argued by an adversarial "defence" agent. Ships with the anonymised findings from a real run so you can calibrate severity |
 | `references/material-standards.md` | Pass/fail criteria per document: bank statements, deposits, self-employment proof, bookings, the four money figures |
 | `scripts/md2docx.py` | Markdown deliverables to .docx for the applicant to read (macOS `textutil`) |
