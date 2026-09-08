@@ -57,6 +57,11 @@
 - 解：直接打开查看服务的真入口 **view-immigration-status.service.gov.uk/status**，走 Passport → 护照号 → 生日 → 码发邮箱，一次进。这一步 agent 可以在电脑无头浏览器上代劳（只读、不点声明），邮箱码从 IMAP 读。
 - eVisa 页显示：Name / Date of birth / Nationality / Status / Valid from / Valid until / Number of entries。**不显示护照号**，护照绑在账户里。10 年访问签的 Status 写「Visitor - British-Irish visa scheme」= BIVS，先入境英国后可免签去爱尔兰。全页截图存进档案。
 
+## 4c. 存档（agent 代劳，一次登录做完）
+- 无头浏览器登 `view-immigration-status.service.gov.uk/status`，viewport 开 3 倍 deviceScaleFactor，先把 cookie 横幅隐藏，再全页截图 = 高清版；按 h1 到 Rotate 按钮的 DOM 坐标裁一张「eVisa 卡片」图；页面上的照片是 base64 内联 JPEG（900×1200），直接解出来存原图。三张都落申请人本机档案，不进 git。
+- 「照片有点歪」= 申请人在 ID Check 里自拍时头歪了，不是显示方向问题；页面上的 Rotate 只转显示。签证官不在乎，想换要走 UKVI 账户 update your details → photo，重新过一遍 ID Check，不值得。
+- 出行不用出示这页：eVisa 绑护照号，航司/边检扫护照即查。备用手段是截图或现场取 share code。
+
 ## 5. 三个实测的坑（全部有解，别卡住）
 1. **国内手机收不到 6 位短信码**（开了国际短信接收也一样，运营商拦）：在「Check your phone」页点最下面 **My code has not arrived**，能跳过手机验证，账户照建；以后登录码选发邮箱。这是最省事的解，比借号快。
 2. **ID Check 应用一开就弹「Sorry, there is a problem with the service」**：不是资料问题，是国内网络连不上。把应用彻底关掉，**换一种网络状态**（代理开↔关、WiFi↔流量）再开，一次就过。
