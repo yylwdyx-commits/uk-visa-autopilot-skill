@@ -1,6 +1,6 @@
 ---
 name: visa
-description: 给申请人及家人办任何国家的签证 / 旅行许可 / 入境授权（ETA、ESTA、eVisa、落地签、过境签都算）。Use whenever the user says 办签证 / 弄个签证 / 要去X国玩帮我搞下签证 / 签证怎么办 / 要不要签证 / 帮我填签证表 / 签证材料, or names a destination and a travel window. 也用于"这趟要不要签证""能不能一签多国""被拒过怎么办"这类问题。内含档案目录约定、已知的坑、审查团队评审闸，以及一条铁律：绝不替申请人提交或付款。
+description: 给申请人及家人办任何国家的签证 / 旅行许可 / 入境授权（ETA、ESTA、eVisa、落地签、过境签都算）。Use whenever the user says 办签证 / 弄个签证 / 要去X国玩帮我搞下签证 / 签证怎么办 / 要不要签证 / 帮我填签证表 / 签证材料, or names a destination and a travel window. 也用于 出签后的事: eVisa/电子签/UKVI账户/ID Check/share code/签证页面存档/英爱互认BIVS/能待多久/爱尔兰要不要签 这类问题, 以及"这趟要不要签证""能不能一签多国""被拒过怎么办"这类问题。内含档案目录约定、已知的坑、审查团队评审闸，以及一条铁律：绝不替申请人提交或付款。
 ---
 
 # 办签证

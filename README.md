@@ -29,7 +29,7 @@ Visa applications are 90% clerical work and 10% judgement. The clerical part (60
 git clone https://github.com/yylwdyx-commits/uk-visa-autopilot-skill ~/.claude/skills/visa
 ```
 
-Open Claude Code and say what trip you're taking. The skill triggers on words like 签证 / visa / ETA / 要不要签证.
+Open Claude Code and say what trip you're taking. The skill triggers on words like 签证 / visa / ETA / 要不要签证, and after the grant on eVisa / UKVI account / ID Check / share code / BIVS.
 
 ## Three rules the agent will not break
 
