@@ -52,6 +52,11 @@
 - **一台手机就能做完，不用扫二维码**：网页点 Continue 会直接唤起应用，做完自动跳回网页显示「Identity information submitted」。两台设备扫码那条路只在电脑上开网页时才用。
 - 应用里顺序：拍护照信息页（横拍）→ 护照合上、手机贴护照封底读芯片（不动等几秒，厚壳先摘）→ 刷脸 → 拍一张不笑的正脸（浅色墙，这张会印在 eVisa 上）→ Submit。
 
+## 4b. 看 eVisa 打转的解法（手机上「You are already logged in」循环）
+- 现象：链接完成后，从 gov.uk 说明页点绿按钮 → 登录 → 「You are already logged in」→ 点第一条又回说明页，无限循环；换无痕页照样。**不是同步没完**，是「申请」域的登录态被查看服务拒收。
+- 解：直接打开查看服务的真入口 **view-immigration-status.service.gov.uk/status**，走 Passport → 护照号 → 生日 → 码发邮箱，一次进。这一步 agent 可以在电脑无头浏览器上代劳（只读、不点声明），邮箱码从 IMAP 读。
+- eVisa 页显示：Name / Date of birth / Nationality / Status / Valid from / Valid until / Number of entries。**不显示护照号**，护照绑在账户里。10 年访问签的 Status 写「Visitor - British-Irish visa scheme」= BIVS，先入境英国后可免签去爱尔兰。全页截图存进档案。
+
 ## 5. 三个实测的坑（全部有解，别卡住）
 1. **国内手机收不到 6 位短信码**（开了国际短信接收也一样，运营商拦）：在「Check your phone」页点最下面 **My code has not arrived**，能跳过手机验证，账户照建；以后登录码选发邮箱。这是最省事的解，比借号快。
 2. **ID Check 应用一开就弹「Sorry, there is a problem with the service」**：不是资料问题，是国内网络连不上。把应用彻底关掉，**换一种网络状态**（代理开↔关、WiFi↔流量）再开，一次就过。
